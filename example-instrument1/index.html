@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/addons/p5.sound.min.js"></script>
+    <script>
+
+    function preload() {
+        sound = loadSound('./hello.wav');
+    }
+
+    function setup() {
+    }
+
+    function draw() {
+        if (sound.isPlaying() == true) {
+            background(255, 0, 0);
+        } else {
+            background(0, 0, 255);
+        }
+    }
+
+    function mousePressed() {
+        userStartAudio();
+        sound.play();
+    }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

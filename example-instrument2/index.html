@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/addons/p5.sound.js"></script>
+    <script>
+
+    function preload() {
+    }
+
+    function setup() {
+        osc = new p5.Oscillator();
+        osc.setType('square');
+        osc.freq(240);
+        osc.amp(0.01);
+
+        document.querySelector('input').addEventListener('input', function() {    
+            freqIntValue = parseInt(document.querySelector('input').value)
+            osc.freq(freqIntValue);
+        });
+    }
+
+    function draw() {
+    }
+
+    function mousePressed() {
+        userStartAudio();
+        osc.start();
+    }
+
+    </script>
+</head>
+
+<body>
+    <input type="range" min="0" max="1000" value="240" />
+</body>
+
+</html>
