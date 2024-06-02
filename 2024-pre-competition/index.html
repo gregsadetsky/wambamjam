@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WAM BAM JAM 2024</title>
+    <style>
+    body {
+        line-height: 1.4;
+        font-size: 16px;
+        padding: 0 10px;
+        margin: 50px auto;
+        max-width: 650px;
+    }
+
+    #maincontent {
+        max-width: 42em;
+        margin: 15 auto;
+
+    }
+
+    .code {
+        font-family: monospace;
+        font-size: 0.8rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="maincontent" style="margin-top:30px">
+        <h1 style="margin-bottom: 10px;">WAM BAM JAM 2024 @ Recurse Center</h1>
+        <div style="text-align: center;margin-bottom: 13px;"><i>Weird Web Instrument Making Festival</i></div>
+        <div style="text-align: center;"><img src="./jazz2.jpg" style="width: 270px;"></div>
+        <hr>
+        Kick off: <b>Wed May 8th 6pm</b> US Eastern<br>
+        Play and Tell: <b>Thu May 9th 5pm</b> 2024 US Eastern<br/>
+        Contact: Greg Sadetsky F2 23 <a href="https://recurse.zulipchat.com/#narrow/dm/646045-Greg-Sadetsky-(he)-(F2'23)">on Zulip</a>, and <a href="mailto:lepetitg@gmail.com">email</a>.
+        <hr>
+        <div>
+            <h3>How does it work?</h3>
+            <ul>
+                <li>
+                    Join us for <a href="https://www.recurse.com/calendar/33272">the kick off on May 8th 6pm ET</a> at the Recurse Center Hub and simultaneously online for remote participants.
+                </li>
+                <li>
+                    You will then have 23 hours to make a weird web instrument.
+                </li>
+                <li>
+                    Submit a .zip file of your instrument code <a href="https://www.dropbox.com/request/lQMI72AzvawSToQAxEGI" style='color: red; font-weight: bold; font-size:1.3rem;'>using this link</a> <b>**before** May 9th 5pm ET</b>. Please include all necessary files. It's ok to include <span class="code">node_modules</span> or not, we'll probably figure it out.
+                </li>
+                <li>
+                    <a href="https://www.recurse.com/calendar/33273">On May 9th at 5pm ET</a>, join the Play and Tell! Everyone will present their instrument for 1 to 2 minutes (depending on the number of submissions).
+                </li>
+                <li>
+                    Recurse community members will then vote on their favorite instrument(s) on Zulip.
+                </li>
+                <li>
+                    The maker(s) of the most-voted-for instrument will receive a <b><a href="https://zeptocore.com/">zeptocore</a></b> (made by Recurse's own <a href="https://schollz.com/">Zack Scholl</a>!) In addition, a <b><a href="https://infinitedigits.co/wares/pikocore/">pikocore</a></b> will be randomly drawn among all participants (minus the zeptocore winner)!
+                </li>
+                <li>
+                    Finally, we'll make all of the submitted instruments available online. Obviously if someone doesn't want their instrument to be online, we won't put it there. But it'd be fun to keep an archive!
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <div style="text-align: center;"><h4>Need inspiration??</h4></div>
+            <div>Download these minimal instruments: <a href="./example-instrument1.zip">instrument1</a>, <a href="./example-instrument2.zip">instrument2</a></div>
+            <div>
+                To run a small web server on your computer, run:<br/>
+                <span class="code">npm install --global http-server</span><br/>
+                then <span class="code">cd</span> to the directory with your html+js+... files, and run:<br/>
+                <span class="code">http-server .</span><br/>
+                Then open your browser and go to <span class="code">http://localhost:8080</span><br/><br/>
+
+                Also! Don't forget that audio usually cannot start playing in a web page without the user first interacting with the page! So, like, make a button and wait until they press it before starting to play.
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h3>Rules</h3>
+            <ul>
+                <li>(Rule I thought of after we kicked off) When we randomly draw the pikocore from the pool of all people who submitted, we will exclude the person/team who wins the zeptocore from the drawing (i.e. you may win either 'cores but not both). I hope that's ok!</li>
+                <li>If two instruments are tied for first place in terms of Zulip votes, we'll have to have an "instrument off" which I honestly would kinda love.</li>
+                <li>Your instrument doesn't have to be weird, it would just be more fun if it was.</li>
+                <li>Your instrument does have to somehow work in a web browser, as much as possible without any external hardware (i.e. it can be MIDI compatible but shouldn't rely on a specific piece of gear).</li>
+                <li>As much as you can, try to submit original work that you created during the Wam Bam Jam (i.e. May 8th to May 9th period.)</li>
+                <li>It's ok to use existing libraries of course, and bits of code you had laying around, but it's not as fun if you submit something you've been working on for a year.</li>
+                <li>You can participate in teams, but you will have to figure out how to divide the pikocore or the zeptocore if you get / win either!</li>
+                <li>Don't submit hurtful/awful things. If in doubt, ask Recurse Faculty or <a href="mailto:lepetitg@gmail.com">Greg</a>.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
